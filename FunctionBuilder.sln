@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionBuilder.Console", "FunctionBuilder.Console\FunctionBuilder.Console.csproj", "{754D834E-503B-499C-A56A-534BA0B6AF7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBuilder.Console", "FunctionBuilder.Console\FunctionBuilder.Console.csproj", "{754D834E-503B-499C-A56A-534BA0B6AF7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionBuilder.Logic", "FunctionBuilder.Logic\FunctionBuilder.Logic.csproj", "{7F02B9C3-1CE3-49B3-AEA0-B71E7059DC79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBuilder.Logic", "FunctionBuilder.Logic\FunctionBuilder.Logic.csproj", "{7F02B9C3-1CE3-49B3-AEA0-B71E7059DC79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionBuilder.Tests", "FunctionBuilder.Tests\FunctionBuilder.Tests.csproj", "{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7F02B9C3-1CE3-49B3-AEA0-B71E7059DC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F02B9C3-1CE3-49B3-AEA0-B71E7059DC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F02B9C3-1CE3-49B3-AEA0-B71E7059DC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
