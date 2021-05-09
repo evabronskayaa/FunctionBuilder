@@ -28,13 +28,11 @@ namespace FunctionBuilder
 
                 if (char.IsDigit(element[0]))
                 {
-                    if (!(char.IsDigit(element[element.Length - 1])))
-                    {
-                        element = element.Remove(element.Length - 1);
-                        i--;
-                        tokenList.Add(double.Parse(element));
-                        element = string.Empty;
-                    }
+                    if (char.IsDigit(element[element.Length - 1])) continue;
+                    element = element.Remove(element.Length - 1);
+                    i--;
+                    tokenList.Add(double.Parse(element));
+                    element = string.Empty;
                 }
                 else if (element == "(" || element == ")")
                 {
