@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionBuilder.Logic\FunctionBuilder.Logic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FunctionBuilder.Logic">
+      <HintPath>..\FunctionBuilder.Logic\bin\Debug\netcoreapp3.1\FunctionBuilder.Logic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

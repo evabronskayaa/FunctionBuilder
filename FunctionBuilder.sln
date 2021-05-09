@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBuilder.Console", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBuilder.Logic", "FunctionBuilder.Logic\FunctionBuilder.Logic.csproj", "{7F02B9C3-1CE3-49B3-AEA0-B71E7059DC79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionBuilder.Tests", "FunctionBuilder.Tests\FunctionBuilder.Tests.csproj", "{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBuilder.Tests", "FunctionBuilder.Tests\FunctionBuilder.Tests.csproj", "{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionBuilder.Desktop", "FunctionBuilder.Desktop\FunctionBuilder.Desktop.csproj", "{325AE020-5EDA-4922-BB13-0DAAD52880B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5823D9DE-AC5A-4AD4-85C8-BDD21A9398C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325AE020-5EDA-4922-BB13-0DAAD52880B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325AE020-5EDA-4922-BB13-0DAAD52880B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325AE020-5EDA-4922-BB13-0DAAD52880B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325AE020-5EDA-4922-BB13-0DAAD52880B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
