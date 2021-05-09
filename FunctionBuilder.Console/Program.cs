@@ -8,7 +8,7 @@
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            string formula = Drawer.AskFunction("Введите формулу: у=");
+            string formula = Drawer.AskFunction("Введите формулу: у= ");
             double step = Drawer.AskDoubleNum(1, "Введите шаг: ");
             double xStart = Drawer.AskDoubleNum(2, "Введите начало: ");
             double xEnd = Drawer.AskDoubleNum(3, "Введите конец: ");

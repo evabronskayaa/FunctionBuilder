@@ -51,20 +51,32 @@ namespace FunctionBuilder
                     tokenList.Add(result);
                     element = string.Empty;
                 }
-                else
+                else if (element == ",")
                 {
-                    throw new Exception("Выражение некорректно");
+                    element = string.Empty;
                 }
+                //else
+                //{
+                //    throw new Exception("Выражение некорректно");
+                //}
             }
             if (element.Length != 0)
             {
                 tokenList.Add(double.Parse(element));
             }
 
+            for (int i = 0; i < tokenList.Count; i++) 
+            {
+                if (tokenList[i] is Parenthessis) 
+                {
+                    tokenList.RemoveAt(i);
+                }
+            }
+
             return tokenList;
         }
 
-        public bool TryGetOperator(string oper, out Operation result)
+        private bool TryGetOperator(string oper, out Operation result)
         {
             switch (oper)
             {
@@ -87,7 +99,9 @@ namespace FunctionBuilder
                     result = (Operation)(new Cos());
                     return true;
                 default:
-                    throw new Exception("Использование неопознанного оператора");
+                    result = null;
+                    return false;
+                //    throw new Exception("Использование неопознанного оператора");
             }
         }
 
@@ -153,10 +167,10 @@ namespace FunctionBuilder
                     List<object> tokenList = new List<object>();
                     int count = operation.OperandCount;
 
-                    for (int j = 1; j <= count; j++)
+                    for (int j = count; j >= 1; j--)
                     {
-                        tokenList.Add(tokens[i - j]);
-                        tokens.RemoveAt(i - j);
+                        tokenList.Add(tokens[i - count]);
+                        tokens.RemoveAt(i - count);
                     }
 
                     i -= count;
